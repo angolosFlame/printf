@@ -33,7 +33,6 @@ struct fmt
 
 /**
  * typedef struct fmt fmt_t - Struct op
- *
  * @fmt: The format.
  * @fm_t: The function associated.
  */
@@ -43,7 +42,6 @@ int _printf(const char *format, ...);
 int handle_print(const char *fmt, int *i,
 va_list list, char buffer[], int flags, int width, int precision, int size);
 
-/****************** FUNCTIONS ******************/
 
 /* Funtions to print chars and strings */
 int print_char(va_list types, char buffer[],

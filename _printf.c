@@ -32,9 +32,9 @@ int _printf(const char *format, ...)
 		{
 			print_buffer(buffer, &buff_ind);
 			flags = spec_flags(format, &i);
-			/*width = spec_width(format, &i, list);
+			width = spec_width(format, &i, list);
 			precision = spec_precision(format, &i, list);
-			size = spec_size(format, &i);*/
+			size = spec_size(format, &i);
 			++i;
 			printed = handle_print(format, &i, list, buffer,
 				flags, width, precision, size);
